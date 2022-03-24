@@ -1,0 +1,7 @@
+applications:
+  - name: movieapp
+memory: 64M
+path: build/
+buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git #latest
+routes:
+  - route: movieapp.mybluemix.net
